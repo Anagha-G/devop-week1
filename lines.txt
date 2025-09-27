@@ -66,6 +66,9 @@ to do without reboot systemctl daemon-reload
 mount -a
 systemctl restart jenkins
 
+yum install maven -y
+mvn -v
+
 
 cd /var/lib/jenkins
 
@@ -123,3 +126,14 @@ vim /etc/hosts =>
 ip add server-hostname
 git init --bare in server
 
+
+
+
+group permissions cmd
+cd/etc/passwd
+usermod -aG wheel boy a
+cat etc/passwd |grep-i arp
+useradd -u 100 arp
+
+vim /etc/sudoers
+/usr/bin
